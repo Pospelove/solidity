@@ -44,6 +44,10 @@ include(EthCcache)
 include(EthDependencies)
 find_package(Threads)
 
+find_package(fmt REQUIRED)
+find_package(range-v3 REQUIRED)
+find_package(jsoncpp REQUIRED)
+
 if(NOT PEDANTIC)
   message(WARNING "-- Pedantic build flags turned off. Warnings will not make compilation fail. This is NOT recommended in development builds.")
 endif()
