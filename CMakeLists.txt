@@ -48,6 +48,8 @@ find_package(fmt REQUIRED)
 find_package(range-v3 REQUIRED)
 find_package(jsoncpp REQUIRED)
 
+add_library(fmt::fmt-header-only ALIAS fmt::fmt)
+
 if(NOT PEDANTIC)
   message(WARNING "-- Pedantic build flags turned off. Warnings will not make compilation fail. This is NOT recommended in development builds.")
 endif()
